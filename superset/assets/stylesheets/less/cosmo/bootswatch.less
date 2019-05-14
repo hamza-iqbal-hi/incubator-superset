@@ -46,6 +46,86 @@
 .navbar-inverse {
   border: 3px solid @navbar-inverse-bg;
 }
+.footer-row {
+  border-top: 1px solid @navbar-inverse-bg;
+  background: @footer-bg;
+ 
+}
+.footer-row .row{
+  margin: 0 auto;
+}
+.footer-content-wraper > div{
+  vertical-align: middle;
+  height:30px;
+
+}
+.footer-wraper{
+  max-height: 100%;
+  
+}
+.m-footer {
+  width: 100%;
+  display: inline-block;
+  margin:  0;
+  height: 70px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0px;
+  .copyright {
+    width: 50%;
+    float: left;
+    height:30px;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+    p {
+      padding-left: 2%;
+      display:inline;
+      font-size: 0.7em;
+      line-height: 70px;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      @media (max-width: 600px) {
+        text-align: center;
+        padding: 0;
+      }
+      
+
+    }
+    img {
+     display : inline !important;
+     margin-left: 20px;
+
+    }
+  }
+  .social {
+    width: 50%;
+    float: left;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+   a {
+    float: left;
+    line-height: 70px;
+    text-decoration: none;
+    
+    text-align: center;
+    font-weight: bold; 
+    @include transition(all, 0.3s);
+     &:hover {
+      font-weight: 800;
+       
+       @include transition(all, .3s);
+     }
+    }
+    
+  }
+ 
+}
+.footer-link {
+  font-size: 0.8em;
+  width: 20%;
+}
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus,

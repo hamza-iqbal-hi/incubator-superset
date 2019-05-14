@@ -106,7 +106,7 @@ FLASK_USE_RELOAD = True
 SHOW_STACKTRACE = True
 
 # Extract and use X-Forwarded-For/X-Forwarded-Proto headers?
-ENABLE_PROXY_FIX = False
+ENABLE_PROXY_FIX = True
 
 # ------------------------------
 # GLOBALS FOR APP Builder
@@ -240,7 +240,7 @@ CACHE_CONFIG = {'CACHE_TYPE': 'null'}
 TABLE_NAMES_CACHE_CONFIG = {'CACHE_TYPE': 'null'}
 
 # CORS Options
-ENABLE_CORS = False
+ENABLE_CORS = True
 CORS_OPTIONS = {}
 
 # Chrome allows up to 6 open connections per domain at a time. When there are more

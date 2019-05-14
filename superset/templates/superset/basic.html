@@ -74,6 +74,13 @@
       </div>
     {% endblock %}
 
+    {% block footer %}
+    {% if not standalone_mode %}
+    <div class="footer-wraper bottom" role="footer">
+      {% include 'appbuilder/my_footer.html' %}
+    </div>
+    {% endif %}
+    {% endblock %}
     <!-- Modal for misc messages / alerts  -->
     <div class="misc-modal modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
