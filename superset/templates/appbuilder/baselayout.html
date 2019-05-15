@@ -46,11 +46,11 @@
     </div>
 
     {% block footer %}
-   
-    <div class="footer-wraper bottom" role="footer">
+    {% if not standalone_mode %}
+    <footer class="footer-wraper bottom" role="footer">
       {% include 'appbuilder/my_footer.html' %}
-    </div>
-
+    </footer>
+    {% endif %}
     {% endblock %}
 {% endblock %}
 
