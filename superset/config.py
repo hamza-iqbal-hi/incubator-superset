@@ -64,7 +64,7 @@ SUPERSET_WEBSERVER_PORT = 8088
 # [load balancer / proxy / envoy / kong / ...] timeout settings.
 # You should also make sure to configure your WSGI server
 # (gunicorn, nginx, apache, ...) timeout setting to be <= to this setting
-SUPERSET_WEBSERVER_TIMEOUT = 60
+SUPERSET_WEBSERVER_TIMEOUT = 999
 
 SUPERSET_DASHBOARD_POSITION_DATA_LIMIT = 65535
 EMAIL_NOTIFICATIONS = False
@@ -202,7 +202,7 @@ LANGUAGES = {
 # will result in combined feature flags of { 'FOO': True, 'BAR': True, 'BAZ': True }
 DEFAULT_FEATURE_FLAGS = {
     # Experimental feature introducing a client (browser) cache
-    'CLIENT_CACHE': False,
+    'CLIENT_CACHE': True,
 }
 
 # A function that receives a dict of all feature flags
@@ -236,8 +236,8 @@ IMG_UPLOAD_URL = '/static/uploads/'
 # IMG_SIZE = (300, 200, True)
 
 CACHE_DEFAULT_TIMEOUT = 60 * 60 * 24
-CACHE_CONFIG = {'CACHE_TYPE': 'null'}
-TABLE_NAMES_CACHE_CONFIG = {'CACHE_TYPE': 'null'}
+CACHE_CONFIG = {'CACHE_TYPE': 'simple'}
+TABLE_NAMES_CACHE_CONFIG = {'CACHE_TYPE': 'simple'}
 
 # CORS Options
 ENABLE_CORS = True
