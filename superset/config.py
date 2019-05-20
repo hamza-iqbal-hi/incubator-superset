@@ -257,7 +257,7 @@ ALLOWED_EXTENSIONS = set(['csv'])
 # CSV Options: key/value pairs that will be passed as argument to DataFrame.to_csv method
 # note: index option should not be overridden
 CSV_EXPORT = {
-    'encoding': 'utf-8',
+    'encoding': 'ISO-8859-1',
 }
 
 # ---------------------------------------------------
