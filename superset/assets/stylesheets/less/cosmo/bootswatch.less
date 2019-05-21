@@ -46,15 +46,6 @@
 .navbar-inverse {
   border: 3px solid @navbar-inverse-bg;
 }
-.footer-row {
-  border-top: 1px solid @navbar-inverse-bg;
-  background: @footer-bg;
- 
-}
-
-.footer-row .row{
-  margin: 0 auto;
-}
 .footer-content-wraper > div{
   vertical-align: middle;
   height:30px;
@@ -78,32 +69,42 @@ body{
 .m-footer {
   background:transparent;
   width: 100%;
-  display: inline-block;
   margin: 0 auto;
-  height: 60px;
+  height: 120px;
   background-color: transparent;
   bottom: 0px;
-  line-height: 60px;
-  
-  
-    img {
-     display : inline !important;
-     margin-left: 4px;
-     max-height: 70px;    
-    }
-  
+  line-height: 50px;
  
 }
-.m-footer > div{
-  width: 95%;
+.footer-top-row{
+  height: 50px;
+  width:390px;
   margin: 0 auto;
-  text-align: center;
+  font-size: 0.7em;
+}
+.footer-top-row  div{
+  float: left;
+}
+.footer-top-left{
+  margin-right:10px;
+}
+.footer-top-row-image-wrapper{
+  height: 100%;
+  max-width: 100px;
+  margin: 0px 20px 0px 10px; 
+  img{
+    object-fit: contain;
+    height: 100%;
+  }
+}
+.footer-bottom-row{
+  margin-top: 12px;
   height: 70px;
 }
-
-.m-footer .header > div{
-  line-height: 10px;
-   
+.footer-bottom-content{
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
 }
 .m-footer p{
   font-size: 0.7em;
