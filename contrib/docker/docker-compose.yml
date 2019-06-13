@@ -52,7 +52,8 @@ services:
       # If using production, comment development volume below
       #SUPERSET_ENV: production
       SUPERSET_ENV: development
-    ports:
+   ports:
+      - 80:8088
       - 8088:8088
     depends_on:
       - postgres
